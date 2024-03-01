@@ -1,0 +1,85 @@
+{
+  "id": "6f40d9dd-48e0-4673-88d7-f4c7643f5854",
+  "version": "2.0",
+  "name": "rr",
+  "url": "https://ibommedicaljournal.org",
+  "tests": [{
+    "id": "5d7a4af8-e925-4a96-9256-ad7f13b7b302",
+    "name": "okay",
+    "commands": [{
+      "id": "540f4df0-e651-4fdd-9825-ff210eff4e4b",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php/imjhome",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3de15434-bf87-49f2-b30a-a09c2e49a5a3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "607x522",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33b801a0-7dfd-4b9b-a1c5-92fc3ec3e1a6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PDF",
+      "targets": [
+        ["linkText=PDF", "linkText"],
+        ["css=li:nth-child(1) > .obj_article_summary .pdf", "css:finder"],
+        ["xpath=//a[contains(text(),'PDF')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://ibommedicaljournal.org/index.php/imjhome/article/view/369/1019')]", "xpath:href"],
+        ["xpath=//li/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b9a9867-74d8-4762-8ae1-86fc743e053a",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc9b127a-e41e-414b-ac08-080194abae3c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27f99f89-13ab-4af4-889d-c0ed4111d014",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "914c6e16-18d0-4d01-a828-5ae6f6a577af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.download",
+      "targets": [
+        ["css=.download", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://ibommedicaljournal.org/index.php/imjhome/article/download/369/1019/3127')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Download PDF')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "59603ee5-5ebf-4db9-9ed3-7da1b2174bd9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5d7a4af8-e925-4a96-9256-ad7f13b7b302"]
+  }],
+  "urls": ["https://ibommedicaljournal.org/"],
+  "plugins": []
+}
